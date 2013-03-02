@@ -1,0 +1,10 @@
+main: com.github.samthepsychoticleprechaun.KeyStoneChatGuard.KeyStoneChatGuard
+name: Key Stone Chat Guard
+version: 0.1
+description: A broad suite of server plug-ins designed for that all-in-one package that server managers deserve!
+commands:
+    KeyStone:
+        description: This command is the base of all KeyStone commands.
+        aliases: ks
+depend: [Key Stone Core]
+softdepend: [Key Stone Chat, Key Stone Punish]
