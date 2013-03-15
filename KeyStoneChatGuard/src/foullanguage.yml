@@ -1,0 +1,42 @@
+#######################################################
+#/---------------------------------------------------\#
+#|       Key Stone Foul Language Storage File        |#
+#\---------------------------------------------------/#
+#######################################################
+
+#-----------#
+#   NOTES   #
+#-----------#
+
+# MAJOR NOTES:
+# DO NOT EDIT THE LAYOUT OF THIS DOCUMENT... EVER!!!
+# DO NOT EDIT THE VALUES 'playercount' and 'id<number>' - THIS IS ESSENTIAL!
+# DO NOT CHANGE THE FORMAT OF THE VALUE 'latestRemovalCount'
+
+# When configuring this file:
+#
+# Do NOT use tab, use standard spaces (2 spaces are roughly equal to a tab)
+# To avoid this, I recommend using Notepad++ over the standard Notepad (Google it if you don't already have it)
+# When using Notepad++ you can change tabs to be replaced by a configurable number of spaces by going to the
+# Settings tool bar option, then to Preferences and finally to Language Menu/Tab Settings.
+#
+# Do NOT change the format of the files; i.e. if an option is indented, don't remove the indentation.
+#
+# If you want to add extra information for extra ease of use; all comment lines should start with a hashtag.
+    # Hopefully adding extra comments should be unneseccary as I
+    # Aim to keep this config file as well explained as I can.
+#
+# For any number values never include decimals if they are not initially provided (i.e. 20 should not
+# be changed to 20.1 or 20.1234)
+
+#------------------------#
+#   Player Spam Values   #
+#------------------------#
+
+playercount: 0
+
+# Example hierarchy
+#   id<number>:
+#     playerName:
+#     offenceCount: 
+#     latestRemovalCount: 

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class FoulLanguageValues {
 
-	public static int idcount;
+	public static int playercount;
 	public static List<String> playerName;
 	public static List<Integer> offenceCount;
 	public static List<String> latestRemovalCount;	

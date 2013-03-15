@@ -13,7 +13,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 
 import com.github.samthepsychoticleprechaun.KeyStoneChatGuard.KeyStoneChatGuard;
 
-public class LoadYaml {
+public class LoadChatGuardYaml {
 	
 	private static KeyStoneChatGuard plugin = KeyStoneChatGuard.plugin;
 	private static Logger log = KeyStoneChatGuard.log;
@@ -23,7 +23,7 @@ public class LoadYaml {
 	 * 
 	 * @return boolean
 	 */
-	public static boolean loadYamls() {
+	public boolean loadYamls() {
 		
 		loadConf();
 		loadSpam();
@@ -137,7 +137,7 @@ public class LoadYaml {
 	 * 
 	 * @return boolean
 	 */
-	public static boolean loadConf() {
+	public boolean loadConf() {
 		
 		File configFile = KeyStoneChatGuard.configFile;
 		FileConfiguration config = KeyStoneChatGuard.config;
@@ -166,7 +166,7 @@ public class LoadYaml {
 	 * 
 	 * @return boolean
 	 */
-	public static boolean loadSpam() {
+	public boolean loadSpam() {
 		
 		File spamFile = KeyStoneChatGuard.spamFile;
 		FileConfiguration spam = KeyStoneChatGuard.spam;
@@ -195,7 +195,7 @@ public class LoadYaml {
 	 * 
 	 * @return boolean
 	 */
-	public static boolean loadFoulLanguage() {
+	public boolean loadFoulLanguage() {
 		
 		File foulLanguageFile = KeyStoneChatGuard.foulLanguageFile;
 		FileConfiguration foulLanguage = KeyStoneChatGuard.foulLanguage;
@@ -226,7 +226,7 @@ public class LoadYaml {
 	 * @param in
 	 * @param file
 	 */
-	private static void copy(InputStream in, File file) {
+	private void copy(InputStream in, File file) {
 		
         try {
         	

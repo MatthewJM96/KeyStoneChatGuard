@@ -10,7 +10,7 @@
 
 # MAJOR NOTES:
 # DO NOT EDIT THE LAYOUT OF THIS DOCUMENT... EVER!!!
-# DO NOT EDIT THE VALUES 'idcount' and 'id' - THIS IS ESSENTIAL!
+# DO NOT EDIT THE VALUES 'playercount' and 'id<number>' - THIS IS ESSENTIAL!
 # DO NOT CHANGE THE FORMAT OF THE VALUE 'latestRemovalCount'
 
 # When configuring this file:

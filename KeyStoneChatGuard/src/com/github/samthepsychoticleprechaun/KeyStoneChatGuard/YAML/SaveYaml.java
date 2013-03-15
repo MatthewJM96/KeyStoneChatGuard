@@ -14,12 +14,16 @@ public class SaveYaml {
 	
 	private static Logger log = KeyStoneChatGuard.log;
 	
+	public SaveYaml() {
+		return;
+	}
+	
 	/**
 	 * Saves all files in plugins/<plugin> folder
 	 * 
 	 * @return boolean
 	 */
-	public static boolean saveYamls() {
+	public boolean saveYamls() {
 		
 		saveConfig();		
 		saveSpam();		
@@ -34,7 +38,7 @@ public class SaveYaml {
 	 * 
 	 * @return boolean
 	 */
-	public static boolean saveConfig() {
+	public boolean saveConfig() {
 		
 		File configFile = KeyStoneChatGuard.configFile;
 		FileConfiguration config = KeyStoneChatGuard.config;
@@ -60,7 +64,7 @@ public class SaveYaml {
 	 * 
 	 * @return boolean
 	 */
-	public static boolean saveSpam() {
+	public boolean saveSpam() {
 		
 		File spamFile = KeyStoneChatGuard.spamFile;
 		FileConfiguration spam = KeyStoneChatGuard.spam;
@@ -95,7 +99,7 @@ public class SaveYaml {
 	 * 
 	 * @return boolean
 	 */
-	public static boolean saveFoulLanguage() {
+	public boolean saveFoulLanguage() {
 		
 		File spamFile = KeyStoneChatGuard.spamFile;
 		FileConfiguration spam = KeyStoneChatGuard.spam;

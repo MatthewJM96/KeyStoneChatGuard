@@ -17,9 +17,9 @@ public class GetYamlValues {
 		
 		try {
 			
-			SpamValues.idcount = spam.getInt("idcount");
+			SpamValues.playercount = spam.getInt("playercount");
 			
-			for(int x = 1; x <= SpamValues.idcount; x++) {
+			for(int x = 1; x <= SpamValues.playercount; x++) {
 				
 				SpamValues.playerName.add(spam.getString("id" + x +".playerName"));
 				SpamValues.offenceCount.add(spam.getInt("id" + x +".offenceCount"));
@@ -44,9 +44,9 @@ public class GetYamlValues {
 		
 		try {
 			
-			FoulLanguageValues.idcount = spam.getInt("idcount");
+			FoulLanguageValues.playercount = spam.getInt("playercount");
 			
-			for(int x = 1; x <= FoulLanguageValues.idcount; x++) {
+			for(int x = 1; x <= FoulLanguageValues.playercount; x++) {
 				
 				FoulLanguageValues.playerName.add(spam.getString("id" + x +".playerName"));
 				FoulLanguageValues.offenceCount.add(spam.getInt("id" + x +".offenceCount"));
