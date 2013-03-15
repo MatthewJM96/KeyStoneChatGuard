@@ -7,7 +7,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.github.samthepsychoticleprechaun.KeyStoneChatGuard.YAML.LoadYaml;
+import com.github.samthepsychoticleprechaun.KeyStoneChatGuard.YAML.LoadChatGuardYaml;
 import com.github.samthepsychoticleprechaun.KeyStoneChatGuard.YAML.SaveYaml;
 import com.github.samthepsychoticleprechaun.KeyStoneCore.API.MySQL.CreateTable;
 import com.github.samthepsychoticleprechaun.KeyStoneCore.Storage.ConfigValues;
@@ -34,11 +34,14 @@ public class KeyStoneChatGuard extends JavaPlugin {
 		log = plugin.getLogger();
 		
 		//Creates and Loads necessary files
+		if(!ConfigValues.usemysql) {
+		LoadChatGuardYaml load = new LoadChatGuardYaml();
 		spamFile = new File(getDataFolder(), "spam.yml");
 		foulLanguageFile = new File(getDataFolder(), "foullanguage.yml");
 		spam = new YamlConfiguration();
 		foulLanguage = new YamlConfiguration();
-		LoadYaml.loadYamls();
+		load.loadYamls();
+		}
 		
 		//Creates necessary MySQL tables if MySQL is enabled
 		if(ConfigValues.usemysql) {
@@ -53,7 +56,8 @@ public class KeyStoneChatGuard extends JavaPlugin {
 	public void onDisable() {
 		
 		//Saves all changes to files while server was live
-		SaveYaml.saveYamls();
+		SaveYaml save = new SaveYaml();
+		save.saveYamls();
 		
 	}
 	
